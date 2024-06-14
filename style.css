@@ -114,6 +114,29 @@ dialog li {
     position: absolute;
     box-shadow: 0 0 1000px 50px #1d4ed8;
     z-index: -100;
+    animation: DVD 15s linear infinite alternate;
+}
+
+@keyframes DVD {
+    0% {
+        left: 30%;
+        top: 30%;
+    }
+    30% {
+        left: 80%;
+        top: 60%;
+        transform: translate(-100%, -100%);
+    }
+
+    60% {
+        left: 60%;
+        top: 80%;
+    }
+
+    100% {
+        left: 30%;
+        top: 30%;
+    }
 }
 
 header{
@@ -277,6 +300,11 @@ section .header{
     margin-bottom: 2rem;
 }
 
+.features .card .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
 .pricing .card h4{
     margin-bottom: 1rem;
     color: #fff;
@@ -297,6 +325,10 @@ section .header{
     margin-right: 0.3rem;
 }
 
+.pricing .card a{
+    color: #fff;
+    transition: all 0.3s ease;
+}
 .pricing .card button{
     color: #fff;
     background-color: transparent;
